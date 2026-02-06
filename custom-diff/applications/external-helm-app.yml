@@ -27,3 +27,7 @@ spec:
       jqPathExpressions:
         - .data["my-password"]
         - .stringData["my-password"]
+    - group: apps
+      kind: Deployment
+      jqPathExpressions:
+        - .spec.template.metadata.creationTimestamp
