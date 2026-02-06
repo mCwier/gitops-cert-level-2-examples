@@ -22,7 +22,7 @@ spec:
     syncOptions:
       - CreateNamespace=true  
 
-ignoreDifferences:
-  - kind: Secret
-    jqPathExpressions:
-      - .data["my-password"]
+  ignoreDifferences:
+    - kind: Secret
+      jqPathExpressions:
+        - .data["my-password"]
